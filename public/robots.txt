@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samui-07ad4f37.zappy5.app/sitemap.xml
