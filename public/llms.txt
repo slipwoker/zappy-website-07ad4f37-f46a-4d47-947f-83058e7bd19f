@@ -1,0 +1,43 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### About
+https://samui-therapy.co.il/about
+
+### Contact
+https://samui-therapy.co.il/contact
+
+### Home
+https://samui-therapy.co.il
+
+### Services
+https://samui-therapy.co.il/services
+
+## Legal & Policy
+
+### Privacy Policy
+https://samui-therapy.co.il/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://samui-therapy.co.il/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://samui-therapy.co.il/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://samui-therapy.co.il/sitemap.xml
+- **Robots.txt**: https://samui-therapy.co.il/robots.txt
