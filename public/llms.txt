@@ -1,55 +1,43 @@
-# SAMUI — Generative Engine Optimization Map
-
-> A בריאות ואורח חיים business.
+# Business — Generative Engine Optimization Map
 
 ---
 
 ## Pages
 
 ### About
-https://zappy-site-07ad4f37-f46a-4d47-947f.onrender.com/about
+https://samui-therapy.co.il/about
 
 ### Contact
-https://zappy-site-07ad4f37-f46a-4d47-947f.onrender.com/contact
+https://samui-therapy.co.il/contact
 
 ### Home
-https://zappy-site-07ad4f37-f46a-4d47-947f.onrender.com
+https://samui-therapy.co.il
 
 ### Services
-https://zappy-site-07ad4f37-f46a-4d47-947f.onrender.com/services
+https://samui-therapy.co.il/services
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://zappy-site-07ad4f37-f46a-4d47-947f.onrender.com/privacy
+https://samui-therapy.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://zappy-site-07ad4f37-f46a-4d47-947f.onrender.com/terms
+https://samui-therapy.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://zappy-site-07ad4f37-f46a-4d47-947f.onrender.com/accessibility
+https://samui-therapy.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About SAMUI
-SAMUI is a business in the בריאות ואורח חיים industry.
-
-## Target Audience
-- ספורטאים מודעים לבריאות
-- יזמים מחפשי שיפור בריאות
-- אנשי מקצוע להפחתת מתח
-
-## Industry
-בריאות ואורח חיים
-
+## About Business
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://zappy-site-07ad4f37-f46a-4d47-947f.onrender.com/sitemap.xml
-- **Robots.txt**: https://zappy-site-07ad4f37-f46a-4d47-947f.onrender.com/robots.txt
+- **Sitemap**: https://samui-therapy.co.il/sitemap.xml
+- **Robots.txt**: https://samui-therapy.co.il/robots.txt

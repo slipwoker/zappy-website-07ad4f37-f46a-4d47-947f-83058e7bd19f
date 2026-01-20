@@ -32,6 +32,7 @@
         .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
         .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { display: flex !important; flex-wrap: wrap !important; align-items: center !important; }
         .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a { flex: 1 !important; }
+        .nav-menu li:has(.sub-menu) > a [class*="chevron"], .nav-menu li:has(.sub-menu) > a [class*="arrow"], .nav-menu li:has(.sub-menu) > a .fa-chevron-down, .nav-menu li:has(.sub-menu) > a .fa-angle-down, nav li:has(.sub-menu) > a [class*="chevron"], nav li:has(.sub-menu) > a [class*="arrow"], #navMenu li:has(.sub-menu) > a [class*="chevron"], #navMenu li:has(.sub-menu) > a [class*="arrow"] { display: none !important; visibility: hidden !important; }
         .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; background: transparent !important; border: none !important; cursor: pointer !important; }
         .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
         .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
@@ -41,10 +42,10 @@
       }
       @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
     </style>
-</head><body><div class="zappy-header" id="zappy-attribution-header" style="display:none"><p data-i18n="about_p_20">Happily created by&nbsp;<a href="https://zappy5.com" rel="noopener noreferrer" target="_blank" class="zappy-link" data-i18n="about_link_42">Zappy</a></p></div><nav class="navbar" id="navbar"><div class="container nav-container"><div class="nav-brand"><a href="/" class="logo-link"><img alt="SAMUI" class="logo" src="/assets/samui-logo.webp" data-i18n-alt="about_alt_51"></a></div><button aria-label="פתח תפריט" class="mobile-toggle" id="mobileToggle"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" class="hamburger-icon"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg><svg fill="none" height="24" viewBox="0 0 24 24" width="24" class="close-icon" style="display:none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></button><button aria-label="התקשר אלינו" class="phone-header-btn"><svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></button><ul class="nav-menu" id="navMenu"><li><a href="/services" data-i18n="about_nav_48">שירותים</a></li><li><a href="/about" data-i18n="about_nav_49">אודות</a></li></ul>
+</head><body><div class="zappy-header" id="zappy-attribution-header" style="display:none"><p data-i18n="about_p_20">Happily created by&nbsp;<a href="https://zappy5.com" rel="noopener noreferrer" target="_blank" class="zappy-link" data-i18n="about_link_42">Zappy</a></p></div><nav class="navbar" id="navbar"><div class="container nav-container"><div class="nav-brand"><a href="/" class="logo-link"><img alt="SAMUI" class="logo" src="/assets/samui-logo.webp" data-i18n-alt="about_alt_51"></a></div><button aria-label="פתח תפריט" class="mobile-toggle" id="mobileToggle"><svg fill="none" height="24" viewbox="0 0 24 24" width="24" class="hamburger-icon"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg><svg fill="none" height="24" viewbox="0 0 24 24" width="24" class="close-icon" style="display:none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></button><button aria-label="התקשר אלינו" class="phone-header-btn"><svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></button><ul class="nav-menu" id="navMenu"><li><a href="/services" data-i18n="about_nav_48">שירותים</a></li><li><a href="/about" data-i18n="about_nav_49">אודות</a></li></ul>
 <div class="lang-switcher" data-no-icon-edit="true" style="position:relative;display:inline-flex;align-items:center;z-index:1000;margin:0 4px;">
   <button class="lang-switcher-current" aria-haspopup="true" aria-expanded="false" data-no-icon-edit="true" style="display:flex;align-items:center;padding:8px;background:transparent;border:none;border-radius:6px;cursor:pointer;color:inherit;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;" data-no-icon-edit="true"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="currentColor" style="flex-shrink:0;" data-no-icon-edit="true"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"></path></svg>
   </button>
   <div class="lang-switcher-dropdown" role="menu" style="position:absolute;top:100%;right:0;margin-top:4px;min-width:140px;background:white;border:1px solid rgba(128,128,128,0.2);border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);opacity:0;visibility:hidden;transform:translateY(-8px);transition:all 0.2s ease;z-index:1001;">
     <button class="lang-option" data-lang="en" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 14px;background:none;border:none;text-align:left;cursor:pointer;font-size:14px;color:#333;"><img src="https://api.iconify.design/circle-flags/us.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:middle;border-radius:50%;"> English</button>
@@ -86,7 +87,7 @@
 
 
 
-<section class="mission-section"><div class="container"><div class="mission-grid"><div class="mission-card"><div class="mission-icon"><i class="fas fa-bullseye"></i></div><h2 data-i18n="about_h2_3">המשימה שלנו</h2><p data-i18n="about_p_24">להנגיש את היתרונות המדהימים של אמבטיות קרח לכל אדם בישראל, ולספק כלים מעשיים לשיפור הבריאות, הביצועים ואיכות החיים באמצעות גישה מקצועית, מדעית ומותאמת אישית.</p></div><div class="mission-card"><div class="mission-icon"><i class="fas fa-eye"></i></div><h2 data-i18n="about_h2_4">החזון שלנו</h2><p data-i18n="about_p_25">להיות המרכז המוביל והמהימן ביותר לאמבטיות קרח בישראל, ולהוביל מהפכה בתפיסה של בריאות ואורח חיים באמצעות שילוב טכניקות מסורתיות עם מחקר מדעי עדכני.</p></div><div class="mission-card"><div class="mission-icon"><i class="fas fa-heart"></i></div><h2 data-i18n="about_h2_5">הערכים שלנו</h2><p data-i18n="about_p_26">מקצועיות, אותנטיות, מחויבות לתוצאות, גישה אישית, למידה מתמדת ושמירה על סביבה בטוחה ותומכת לכל משתתף. אנו מאמינים בכוח של הקהילה והתמיכה ההדדית.</p></div></div></div></section><section class="approach-section"><div class="container"><h2 data-i18n="about_h2_6">הגישה המקצועית שלנו</h2><div class="approach-content"><p data-i18n="about_p_27">ב-SAMUI אנו מאמינים בגישה הוליסטית המשלבת את היתרונות הפיזיים והמנטליים של אמבטיות הקרח. התוכניות שלנו מבוססות על מחקרים מדעיים עדכניים, ניסיון מעשי רב שנים והבנה עמוקה של הצרכים האישיים של כל משתתף.</p><p data-i18n="about_p_28">אנו לא מאמינים בפתרונות גנריים. כל משתתף מקבל תשומת לב אישית, תוכנית מותאמת ולווי צמוד לאורך כל התהליך. המדריכים שלנו עוברים הכשרה מקיפה ומתמשכת, ומתעדכנים באופן קבוע במחקרים החדשים ביותר בתחום.</p></div><div class="approach-pillars"><div class="pillar"><h3 data-i18n="about_h3_10">בטיחות מקסימלית</h3><p data-i18n="about_p_29">אנו שמים דגש מיוחד על בטיחות המשתתפים, עם ציוד מתקדם, פרוטוכולים ברורים וליווי צמוד של מדריכים מנוסים.</p></div><div class="pillar"><h3 data-i18n="about_h3_11">התאמה אישית</h3><p data-i18n="about_p_30">כל תוכנית מותאמת אישית לרמת הכושר, המטרות והצרכים הייחודיים של כל משתתף.</p></div><div class="pillar"><h3 data-i18n="about_h3_12">גישה מדעית</h3><p data-i18n="about_p_31">השיטות שלנו מבוססות על מחקרים מדעיים עדכניים ומתעדכנות באופן קבוע בהתאם לגילויים החדשים.</p></div><div class="pillar"><h3 data-i18n="about_h3_13">תמיכה מתמשכת</h3><p data-i18n="about_p_32">אנו מספקים ליווי ותמיכה גם לאחר הסדנאות, כדי להבטיח שהמשתתפים ימשיכו להפיק תועלת לאורך זמן.</p></div></div></div></section><section class="why-different"><div class="container"><h2 data-i18n="about_h2_7">מה מייחד את SAMUI</h2><div class="differences-grid"><div class="difference-item"><i class="fas fa-certificate"></i><h3 data-i18n="about_h3_14">מדריכים מוסמכים</h3><p data-i18n="about_p_33">כל המדריכים שלנו עברו הכשרה מקיפה ומחזיקים בהסמכות מקצועיות בתחום אמבטיות הקרח וטכניקות נשימה.</p></div><div class="difference-item"><i class="fas fa-microscope"></i><h3 data-i18n="about_h3_15">גישה מבוססת מחקר</h3><p data-i18n="about_p_34">אנו עוקבים אחר המחקרים העדכניים ביותר ומתעדכנים באופן קבוע בגילויים החדשים בתחום.</p></div><div class="difference-item"><i class="fas fa-users"></i><h3 data-i18n="about_h3_16">קהילה תומכת</h3><p data-i18n="about_p_35">המשתתפים שלנו הופכים לחלק מקהילה תומכת ומעצימה, המספקת מוטיבציה ותמיכה הדדית.</p></div><div class="difference-item"><i class="fas fa-cogs"></i><h3 data-i18n="about_h3_17">ציוד מתקדם</h3><p data-i18n="about_p_36">אנו משתמשים בציוד המתקדם והבטוחי ביותר, המאפשר חוויה אופטימלית ובטוחה.</p></div><div class="difference-item"><i class="fas fa-chart-line"></i><h3 data-i18n="about_h3_18">מעקב והתקדמות</h3><p data-i18n="about_p_37">אנו עוקבים אחר ההתקדמות של כל משתתף ומתאימים את התוכנית בהתאם לתוצאות.</p></div><div class="difference-item"><i class="fas fa-handshake"></i><h3 data-i18n="about_h3_19">מחויבות לתוצאות</h3><p data-i18n="about_p_38">אנו מתחייבים לספק תוצאות אמיתיות ומדידות, ועובדים עד שהמשתתפים משיגים את המטרות שלהם.</p></div></div></div></section><section class="cta-section"><div class="container"><div class="cta-content"><h2 data-i18n="about_h2_8">מוכנים להצטרף למשפחת SAMUI?</h2><p data-i18n="about_p_39">בואו לגלות איך אמבטיות קרח יכולות לשנות את החיים שלכם</p><a href="/contact" class="btn-primary" data-i18n="about_link_43">צור קשר עכשיו</a></div></div></section><a href="https://wa.me/972542600266" aria-label="WhatsApp" rel="noopener noreferrer" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a><footer class="legal-footer"><div class="container"><div class="footer-main"><div class="all-rights-reserved"><p data-i18n="about_p_40">© 2025 SAMUI. כל הזכויות שמורות.</p></div><div class="footer-social"><a href="#" aria-label="Facebook" rel="noopener noreferrer" style="display:none" target="_blank"><i class="fab fa-facebook"></i></a><a href="#" aria-label="Instagram" rel="noopener noreferrer" style="display:none" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://wa.me/972542600266" aria-label="WhatsApp" rel="noopener noreferrer" target="_blank"><i class="fab fa-whatsapp"></i></a></div><div class="footer-legal"><a href="privacy.html" aria-label="מדיניות פרטיות" data-i18n="about_link_44">מדיניות פרטיות</a><span class="separator">|</span><a href="accessibility.html" aria-label="נגישות" data-i18n="about_link_45">נגישות</a><span class="separator">|</span><a href="terms.html" aria-label="תנאי שימוש" data-i18n="about_link_46">תנאי שימוש</a></div></div><div class="zappy-attribution"><p data-i18n="about_p_41">נוצר באמצעות<a href="https://zappy5.com" rel="noopener noreferrer" target="_blank" style="color:inherit;text-decoration:underline" data-i18n="about_link_47">Zappy</a></p></div></div></footer><script>!function(){var e=window.location.href;e.includes("/preview/")||e.includes("/preview-fullscreen/")||e.includes("localhost:5001")||e.includes("localhost:3000")||fetch("https://api.zappy5.com/api/website/07ad4f37-f46a-4d47-947f-83058e7bd19f/tier").then(function(e){return e.json()}).then(function(e){if(e.showAttribution){var t=document.getElementById("zappy-attribution-header");t&&(t.style.display="block")}}).catch(function(e){console.error("Failed to check tier:",e)})}()</script><div data-integration="accessibility:toolbar"></div><script src="/script.js"></script>
+<section class="mission-section"><div class="container"><div class="mission-grid"><div class="mission-card"><div class="mission-icon"><i class="fas fa-bullseye"></i></div><h2 data-i18n="about_h2_3">המשימה שלנו</h2><p data-i18n="about_p_24">להנגיש את היתרונות המדהימים של אמבטיות קרח לכל אדם בישראל, ולספק כלים מעשיים לשיפור הבריאות, הביצועים ואיכות החיים באמצעות גישה מקצועית, מדעית ומותאמת אישית.</p></div><div class="mission-card"><div class="mission-icon"><i class="fas fa-eye"></i></div><h2 data-i18n="about_h2_4">החזון שלנו</h2><p data-i18n="about_p_25">להיות המרכז המוביל והמהימן ביותר לאמבטיות קרח בישראל, ולהוביל מהפכה בתפיסה של בריאות ואורח חיים באמצעות שילוב טכניקות מסורתיות עם מחקר מדעי עדכני.</p></div><div class="mission-card"><div class="mission-icon"><i class="fas fa-heart"></i></div><h2 data-i18n="about_h2_5">הערכים שלנו</h2><p data-i18n="about_p_26">מקצועיות, אותנטיות, מחויבות לתוצאות, גישה אישית, למידה מתמדת ושמירה על סביבה בטוחה ותומכת לכל משתתף. אנו מאמינים בכוח של הקהילה והתמיכה ההדדית.</p></div></div></div></section><section class="approach-section"><div class="container"><h2 data-i18n="about_h2_6">הגישה המקצועית שלנו</h2><div class="approach-content"><p data-i18n="about_p_27">ב-SAMUI אנו מאמינים בגישה הוליסטית המשלבת את היתרונות הפיזיים והמנטליים של אמבטיות הקרח. התוכניות שלנו מבוססות על מחקרים מדעיים עדכניים, ניסיון מעשי רב שנים והבנה עמוקה של הצרכים האישיים של כל משתתף.</p><p data-i18n="about_p_28">אנו לא מאמינים בפתרונות גנריים. כל משתתף מקבל תשומת לב אישית, תוכנית מותאמת ולווי צמוד לאורך כל התהליך. המדריכים שלנו עוברים הכשרה מקיפה ומתמשכת, ומתעדכנים באופן קבוע במחקרים החדשים ביותר בתחום.</p></div><div class="approach-pillars"><div class="pillar"><h3 data-i18n="about_h3_10">בטיחות מקסימלית</h3><p data-i18n="about_p_29">אנו שמים דגש מיוחד על בטיחות המשתתפים, עם ציוד מתקדם, פרוטוכולים ברורים וליווי צמוד של מדריכים מנוסים.</p></div><div class="pillar"><h3 data-i18n="about_h3_11">התאמה אישית</h3><p data-i18n="about_p_30">כל תוכנית מותאמת אישית לרמת הכושר, המטרות והצרכים הייחודיים של כל משתתף.</p></div><div class="pillar"><h3 data-i18n="about_h3_12">גישה מדעית</h3><p data-i18n="about_p_31">השיטות שלנו מבוססות על מחקרים מדעיים עדכניים ומתעדכנות באופן קבוע בהתאם לגילויים החדשים.</p></div><div class="pillar"><h3 data-i18n="about_h3_13">תמיכה מתמשכת</h3><p data-i18n="about_p_32">אנו מספקים ליווי ותמיכה גם לאחר הסדנאות, כדי להבטיח שהמשתתפים ימשיכו להפיק תועלת לאורך זמן.</p></div></div></div></section><section class="why-different"><div class="container"><h2 data-i18n="about_h2_7">מה מייחד את SAMUI</h2><div class="differences-grid zappy-preserve-css-grid" style="display: grid; --zappy-grid-cols: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);" data-original-item-width="254" data-original-gap="32px"><div class="difference-item"><i class="fas fa-certificate" data-element-type="icon" data-element-id="icon-1768921473555-pxchbu25k" data-icon-type="fontawesome" style="pointer-events: auto; cursor: pointer;"></i><h3 data-i18n="about_h3_14" class="zappy-editable">מדריכים מוסמכים</h3><p data-i18n="about_p_33" class="zappy-editable">כל המדריכים שלנו עברו הכשרה מקיפה ומחזיקים בהסמכות מקצועיות בתחום אמבטיות הקרח וטכניקות נשימה.</p></div><div class="difference-item"><i class="fas fa-microscope" data-element-type="icon" data-element-id="icon-1768921473555-zzt5nfk9v" data-icon-type="fontawesome" style="pointer-events: auto; cursor: pointer;"></i><h3 data-i18n="about_h3_15" class="zappy-editable">גישה מבוססת מחקר</h3><p data-i18n="about_p_34" class="zappy-editable">אנו עוקבים אחר המחקרים העדכניים ביותר ומתעדכנים באופן קבוע בגילויים החדשים בתחום.</p></div><div class="difference-item"><i class="fas fa-users" data-element-type="icon" data-element-id="icon-1768921473555-2y076vdz8" data-icon-type="fontawesome" style="pointer-events: auto; cursor: pointer;"></i><h3 data-i18n="about_h3_16" class="zappy-editable">קהילה תומכת</h3><p data-i18n="about_p_35" class="zappy-editable">המשתתפים שלנו הופכים לחלק מקהילה תומכת ומעצימה, המספקת מוטיבציה ותמיכה הדדית.</p></div><div class="difference-item"><i class="fas fa-cogs" data-element-type="icon" data-element-id="icon-1768921473556-107gjeg8j" data-icon-type="fontawesome" style="pointer-events: auto; cursor: pointer;"></i><h3 data-i18n="about_h3_17" class="zappy-editable">ציוד מתקדם</h3><p data-i18n="about_p_36" class="zappy-editable">אנו משתמשים בציוד המתקדם והבטוחי ביותר, המאפשר חוויה אופטימלית ובטוחה.</p></div><div class="difference-item"><i class="fas fa-chart-line" data-element-type="icon" data-element-id="icon-1768921473556-8rruq82np" data-icon-type="fontawesome" style="pointer-events: auto; cursor: pointer;"></i><h3 data-i18n="about_h3_18" class="zappy-editable">מעקב והתקדמות</h3><p data-i18n="about_p_37" class="zappy-editable">אנו עוקבים אחר ההתקדמות של כל משתתף ומתאימים את התוכנית בהתאם לתוצאות.</p></div></div></div></section><section class="cta-section"><div class="container"><div class="cta-content"><h2 data-i18n="about_h2_8">מוכנים להצטרף למשפחת SAMUI?</h2><p data-i18n="about_p_39">בואו לגלות איך אמבטיות קרח יכולות לשנות את החיים שלכם</p><a href="/contact" class="btn-primary" data-i18n="about_link_43">צור קשר עכשיו</a></div></div></section><a href="https://wa.me/972542600266" aria-label="WhatsApp" rel="noopener noreferrer" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a><footer class="legal-footer"><div class="container"><div class="footer-main"><div class="all-rights-reserved"><p data-i18n="about_p_40">© 2025 SAMUI. כל הזכויות שמורות.</p></div><div class="footer-social"><a href="#" aria-label="Facebook" rel="noopener noreferrer" style="display:none" target="_blank"><i class="fab fa-facebook"></i></a><a href="#" aria-label="Instagram" rel="noopener noreferrer" style="display:none" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://wa.me/972542600266" aria-label="WhatsApp" rel="noopener noreferrer" target="_blank"><i class="fab fa-whatsapp"></i></a></div><div class="footer-legal"><a href="privacy.html" aria-label="מדיניות פרטיות" data-i18n="about_link_44">מדיניות פרטיות</a><span class="separator">|</span><a href="accessibility.html" aria-label="נגישות" data-i18n="about_link_45">נגישות</a><span class="separator">|</span><a href="terms.html" aria-label="תנאי שימוש" data-i18n="about_link_46">תנאי שימוש</a></div></div><div class="zappy-attribution"><p data-i18n="about_p_41">נוצר באמצעות<a href="https://zappy5.com" rel="noopener noreferrer" target="_blank" style="color:inherit;text-decoration:underline" data-i18n="about_link_47">Zappy</a></p></div></div></footer><script>!function(){var e=window.location.href;e.includes("/preview/")||e.includes("/preview-fullscreen/")||e.includes("localhost:5001")||e.includes("localhost:3000")||fetch("https://api.zappy5.com/api/website/07ad4f37-f46a-4d47-947f-83058e7bd19f/tier").then(function(e){return e.json()}).then(function(e){if(e.showAttribution){var t=document.getElementById("zappy-attribution-header");t&&(t.style.display="block")}}).catch(function(e){console.error("Failed to check tier:",e)})}()</script><div data-integration="accessibility:toolbar"></div><script src="/script.js"></script>
 <!-- i18next Multi-Language Support -->
 <script>
 (function() {
@@ -94,6 +95,35 @@
   const resources = {
   "he": {
     "translation": {
+      "home_h1_1": "חוו את כוח אמבטיות הקרח לבריאות ואיכות חיים",
+      "home_h2_2": "למה אמבטיות קרח?",
+      "home_h2_3": "היתרונות הבריאותיים של אמבטיות קרח",
+      "home_h2_4": "הסדנאות והשירותים שלנו",
+      "home_h2_5": "למה לבחור ב-SAMUI?",
+      "home_h2_6": "מה אומרים המשתתפים שלנו",
+      "home_h2_7": "מוכנים להתחיל את המסע שלכם?",
+      "home_h3_8": "סדנאות מקצועיות וריטריטים המותאמים לספורטאים, יזמים ואנשי מקצוע.",
+      "home_h3_9": "שיפור מחזור הדם",
+      "home_p_18": "Happily created by&nbsp;Zappy",
+      "home_p_19": "אמבטיות קרח הן הכלי המושלם לשיפור הביצועים הספורטיים, הפחתת מתחים והעלאת רמת האנרגיה. בעידן המודרני, יותר ויותר ספורטאים מובילים, יזמים ואנשי מקצוע מגלים את היתרונות המדהימים של הטבילה במים קרים. המחקרים מראים כי חשיפה קבועה לקור משפרת את מערכת החיסון, מגבירה את הריכוז ותורמת לבריאות הנפש.",
+      "home_p_20": "ב-SAMUI, אנחנו מאמינים בגישה הוליסטית המשלבת את היתרונות הפיזיים והמנטליים של אמבטיות הקרח. הסדנאות שלנו מיועדות לכל מי שמחפש דרך טבעית ויעילה לשפר את איכות החיים, להתמודד עם מתחים יומיומיים ולהגיע לשיא הביצועים.",
+      "home_p_21": "חשיפה למים קרים מגבירה את זרימת הדם, משפרת את אספקת החמצן לשרירים ומאיצה את תהליכי ההחלמה לאחר אימונים אינטנסיביים.",
+      "home_p_22": "אמבטיות קרח משפרות את הריכוז, מגבירות את רמת הערנות ותורמות לבהירות מחשבתית - אידיאלי ליזמים ואנשי מקצוע.",
+      "home_p_23": "חשיפה קבועה לקור מחזקת את מערכת החיסון, מגבירה את ייצור תאי הדם הלבנים ומפחיתה דלקות בגוף.",
+      "home_p_24": "הטבילה במים קרים משחררת אנדורפינים, מפחיתה את רמות הקורטיזול ומספקת תחושת רוגע ושלווה מיידית.",
+      "home_p_25": "ספורטאים מדווחים על שיפור משמעותי בזמני ההתאוששות, הפחתת כאבי שרירים ועלייה ביכולת הסיבולת.",
+      "home_p_26": "חשיפה לקור מגבירה את חילוף החומרים, מפעילה שומן חום ותורמת לשריפת קלוריות גם בזמן מנוחה.",
+      "home_p_27": "ב-SAMUI אנו מציעים מגוון רחב של סדנאות וריטריטים המותאמים אישית לצרכים שלכם",
+      "home_p_28": "תוכניות אימון מיוחדות המשלבות אמבטיות קרח עם טכניקות נשימה לשיפור הביצועים וההתאוששות המהירה.",
+      "home_p_29": "חוויה טיפולית גוף ונפש המותאמת לאנשי עסקים המחפשים דרכים לשפר את המיקוד והפרודוקטיביות.",
+      "home_p_30": "תוכניות מיוחדות לאנשי מקצוע בתפקידים מלחיצים, המשלבות אמבטיות קרח עם מדיטציה ורגיעה.",
+      "home_p_31": "SAMUI היא מובילה בתחום אמבטיות הקרח בישראל, עם ניסיון רב שנים בהדרכת ספורטאים, יזמים ואנשי מקצוע. אנו משלבים גישה מקצועית עם הבנה עמוקה של הצרכים האישיים של כל משתתף.",
+      "home_p_32": "\"הסדנאות של SAMUI שינו את הגישה שלי לאימונים. ההתאוששות שלי משמעותית יותר מהירה והביצועים שלי השתפרו בצורה ניכרת. ממליץ בחום!\"",
+      "home_p_33": "\"כיזם, אני תמיד מחפש דרכים לשפר את המיקוד והאנרגיה שלי. הריטריט של SAMUI נתן לי כלים מעשיים שאני משתמש בהם מדי יום. חוויה משנת חיים!\"",
+      "home_p_34": "\"אחרי שנים של עבודה מלחיצה, מצאתי ב-SAMUI דרך טבעית להתמודד עם המתח. אמבטיות הקרח הפכו לחלק קבוע מהשגרה שלי והן משפיעות מאוד על איכות החיים שלי.\"",
+      "home_p_35": "הצטרפו לאלפי אנשים שכבר חווים את היתרונות המדהימים של אמבטיות הקרח",
+      "home_p_36": "© 2025 SAMUI. כל הזכויות שמורות.",
+      "home_p_37": "נוצר באמצעותZappy",
       "about_h1_1": "הסיפור שלנו",
       "about_h2_2": "הסיפור שלנו",
       "about_h2_3": "המשימה שלנו",
@@ -103,16 +133,6 @@
       "about_h2_7": "מה מייחד את SAMUI",
       "about_h2_8": "מוכנים להצטרף למשפחת SAMUI?",
       "about_h3_9": "מסע של גילוי, למידה והעצמה דרך אמבטיות קרח",
-      "about_h3_10": "בטיחות מקסימלית",
-      "about_h3_11": "התאמה אישית",
-      "about_h3_12": "גישה מדעית",
-      "about_h3_13": "תמיכה מתמשכת",
-      "about_h3_14": "מדריכים מוסמכים",
-      "about_h3_15": "גישה מבוססת מחקר",
-      "about_h3_16": "קהילה תומכת",
-      "about_h3_17": "ציוד מתקדם",
-      "about_h3_18": "מעקב והתקדמות",
-      "about_h3_19": "מחויבות לתוצאות",
       "about_p_20": "Happily created by&nbsp;Zappy",
       "about_p_21": "SAMUI נולדה מתוך חיפוש אישי אחר דרכים טבעיות לשפר את איכות החיים, הביצועים והבריאות. המייסדים שלנו, שעסקו במשך שנים בתחומי הספורט, הבריאות והפיתוח האישי, גילו את הכוח המדהים של אמבטיות הקרח כאשר חיפשו פתרונות להתמודדות עם מתחים יומיומיים ושיפור הביצועים הספורטיים.",
       "about_p_22": "מה שהתחיל כניסוי אישי הפך במהרה לתשוקה עמוקה. אחרי שחווינו בעצמנו את השינויים המשמעותיים שאמבטיות הקרח הביאו לחיינו - שיפור בשינה, עלייה ברמת האנרגיה, חדות מנטלית משופרת והתאוששות מהירה יותר מאימונים - הבנו שאנחנו חייבים לשתף את הידע והחוויה הזו עם אחרים.",
@@ -135,19 +155,43 @@
       "about_p_39": "בואו לגלות איך אמבטיות קרח יכולות לשנות את החיים שלכם",
       "about_p_40": "© 2025 SAMUI. כל הזכויות שמורות.",
       "about_p_41": "נוצר באמצעותZappy",
-      "about_link_42": "Zappy",
-      "about_link_43": "צור קשר עכשיו",
-      "about_link_44": "מדיניות פרטיות",
-      "about_link_45": "נגישות",
-      "about_link_46": "תנאי שימוש",
-      "about_link_47": "Zappy",
+      "home_h3_10": "חדות מנטלית",
+      "home_h3_11": "חיזוק מערכת החיסון",
+      "home_h3_12": "הפחתת מתח וחרדה",
+      "home_h3_13": "שיפור ביצועים ספורטיביים",
+      "home_h3_14": "שריפת שומן טבעית",
+      "home_h3_15": "סדנאות לספורטאים",
+      "home_h3_16": "ריטריטים ליזמים",
+      "home_h3_17": "סדנאות להפחתת מתחים",
+      "home_li_50": "מדריכים מוסמכים ומנוסים",
+      "home_li_51": "ציוד מתקדם ובטיחותי",
+      "home_li_52": "תוכניות מותאמות אישית",
+      "home_li_53": "ליווי מקצועי לאורך כל התהליך",
+      "home_li_54": "סביבה בטוחה ומקצועית",
+      "about_h3_10": "בטיחות מקסימלית",
+      "about_h3_11": "התאמה אישית",
+      "about_h3_12": "גישה מדעית",
+      "about_h3_13": "תמיכה מתמשכת",
+      "about_h3_14": "מדריכים מוסמכים",
+      "about_h3_15": "גישה מבוססת מחקר",
+      "about_h3_16": "קהילה תומכת",
+      "about_h3_17": "ציוד מתקדם",
+      "about_h3_18": "מעקב והתקדמות",
+      "about_h3_19": "מחויבות לתוצאות",
+      "home_alt_58": "SAMUI",
+      "home_alt_59": "אמבטיית קרח מקצועית בסביבה טבעית",
+      "home_alt_60": "סדנת אמבטיות קרח לספורטאים",
+      "home_alt_61": "ריטריט קרח ליזמים",
+      "home_alt_62": "סדנאות להפחתת מתחים",
+      "home_alt_63": "הדרכה מקצועית באמבטיות קרח",
+      "home_nav_55": "שירותים",
+      "home_nav_56": "אודות",
+      "home_nav_57": "צור קשר",
+      "about_alt_51": "SAMUI",
+      "about_alt_52": "Man with crossed arms, wearing Quicksilver shirt. Variant 1.",
       "about_nav_48": "שירותים",
       "about_nav_49": "אודות",
       "about_nav_50": "צור קשר",
-      "about_alt_51": "SAMUI",
-      "about_alt_52": "Man with crossed arms, wearing Quicksilver shirt. Variant 1.",
-      "about_meta_description": "הכירו את SAMUI - מובילים בתחום אמבטיות הקרח בישראל. הסיפור שלנו, הצוות המקצועי והגישה הייחודית שלנו.",
-      "about_page_title": "הסיפור שלנו ומי אנחנו — SAMUI",
       "contact_h1_1": "צור קשר איתנו",
       "contact_h2_2": "פרטי התקשרות",
       "contact_h2_3": "שלחו לנו הודעה",
@@ -157,11 +201,6 @@
       "contact_h3_7": "אימייל",
       "contact_h3_8": "WhatsApp",
       "contact_h3_9": "כתובת",
-      "contact_h3_10": "שעות פעילות",
-      "contact_h3_11": "האם צריך ניסיון קודם באמבטיות קרח?",
-      "contact_h3_12": "כמה זמן אורכת סדנה טיפוסית?",
-      "contact_h3_13": "מה צריך להביא לסדנה?",
-      "contact_h3_14": "האם יש הגבלות רפואיות?",
       "contact_p_15": "Happily created by&nbsp;Zappy",
       "contact_p_16": "אנחנו כאן כדי לעזור לכם. צרו קשר בכל דרך שנוחה לכם ונחזור אליכם בהקדם האפשרי.",
       "contact_p_17": "shai.gindi@gmail.com",
@@ -174,91 +213,6 @@
       "contact_p_24": "יש כמה מצבים רפואיים שעלולים להוות התווית נגד. נשמח לדון בזה איתכם באופן אישי ולהתאים את הסדנה בהתאם. בטיחות המשתתפים היא בראש סדר העדיפויות שלנו.",
       "contact_p_25": "© 2025 SAMUI. כל הזכויות שמורות.",
       "contact_p_26": "נוצר באמצעותZappy",
-      "contact_span_27": "יום ראשון:",
-      "contact_span_28": "סגור",
-      "contact_span_29": "יום שני:",
-      "contact_span_30": "סגור",
-      "contact_span_31": "יום שלישי:",
-      "contact_span_32": "סגור",
-      "contact_span_33": "יום רביעי:",
-      "contact_span_34": "סגור",
-      "contact_span_35": "יום חמישי:",
-      "contact_span_36": "סגור",
-      "contact_span_37": "יום שישי:",
-      "contact_span_38": "יום שבת:",
-      "contact_span_39": "סגור",
-      "contact_span_40": "אני מסכים/ה לתנאי השימוש ולמדיניות הפרטיות*",
-      "contact_link_41": "Zappy",
-      "contact_link_42": "shai.gindi@gmail.com",
-      "contact_link_43": "שלח הודעה",
-      "contact_link_44": "מדיניות פרטיות",
-      "contact_link_45": "נגישות",
-      "contact_link_46": "תנאי שימוש",
-      "contact_link_47": "Zappy",
-      "contact_btn_48": "שלח הודעה",
-      "contact_label_49": "שם מלא*",
-      "contact_label_50": "אימייל*",
-      "contact_label_51": "טלפון*",
-      "contact_label_52": "סוג השירות המעניין",
-      "contact_label_53": "הודעה",
-      "contact_label_54": "אני מסכים/ה לתנאי השימוש ולמדיניות הפרטיות*",
-      "contact_li_55": "יום ראשון:סגור",
-      "contact_li_56": "יום שני:סגור",
-      "contact_li_57": "יום שלישי:סגור",
-      "contact_li_58": "יום רביעי:סגור",
-      "contact_li_59": "יום חמישי:סגור",
-      "contact_li_60": "יום שישי:08:00 - 17:00",
-      "contact_li_61": "יום שבת:סגור",
-      "contact_nav_62": "שירותים",
-      "contact_nav_63": "אודות",
-      "contact_nav_64": "צור קשר",
-      "contact_placeholder_65": "הזינו את שמכם המלא",
-      "contact_placeholder_66": "your@email.com",
-      "contact_placeholder_67": "050-1234567",
-      "contact_placeholder_68": "ספרו לנו קצת על עצמכם ועל המטרות שלכם",
-      "contact_alt_69": "SAMUI",
-      "contact_meta_description": "צרו קשר עם SAMUI לפרטים נוספים על סדנאות אמבטיות קרח, ריטריטים ותוכניות מותאמות אישית. אנחנו כאן לעזור.",
-      "contact_page_title": "צור קשר עכשיו — SAMUI",
-      "home_h1_1": "חוו את כוח אמבטיות הקרח לבריאות ואיכות חיים",
-      "home_h2_2": "למה אמבטיות קרח?",
-      "home_h2_3": "היתרונות הבריאותיים של אמבטיות קרח",
-      "home_h2_4": "הסדנאות והשירותים שלנו",
-      "home_h2_5": "למה לבחור ב-SAMUI?",
-      "home_h2_6": "מה אומרים המשתתפים שלנו",
-      "home_h2_7": "מוכנים להתחיל את המסע שלכם?",
-      "home_h3_8": "סדנאות מקצועיות וריטריטים המותאמים לספורטאים, יזמים ואנשי מקצוע.",
-      "home_h3_9": "שיפור מחזור הדם",
-      "home_h3_10": "חדות מנטלית",
-      "home_h3_11": "חיזוק מערכת החיסון",
-      "home_h3_12": "הפחתת מתח וחרדה",
-      "home_h3_13": "שיפור ביצועים ספורטיביים",
-      "home_h3_14": "שריפת שומן טבעית",
-      "home_h3_15": "סדנאות לספורטאים",
-      "home_h3_16": "ריטריטים ליזמים",
-      "home_h3_17": "סדנאות להפחתת מתחים",
-      "home_p_18": "Happily created by&nbsp;Zappy",
-      "home_p_19": "אמבטיות קרח הן הכלי המושלם לשיפור הביצועים הספורטיים, הפחתת מתחים והעלאת רמת האנרגיה. בעידן המודרני, יותר ויותר ספורטאים מובילים, יזמים ואנשי מקצוע מגלים את היתרונות המדהימים של הטבילה במים קרים. המחקרים מראים כי חשיפה קבועה לקור משפרת את מערכת החיסון, מגבירה את הריכוז ותורמת לבריאות הנפש.",
-      "home_p_20": "ב-SAMUI, אנחנו מאמינים בגישה הוליסטית המשלבת את היתרונות הפיזיים והמנטליים של אמבטיות הקרח. הסדנאות שלנו מיועדות לכל מי שמחפש דרך טבעית ויעילה לשפר את איכות החיים, להתמודד עם מתחים יומיומיים ולהגיע לשיא הביצועים.",
-      "home_p_21": "חשיפה למים קרים מגבירה את זרימת הדם, משפרת את אספקת החמצן לשרירים ומאיצה את תהליכי ההחלמה לאחר אימונים אינטנסיביים.",
-      "home_p_22": "אמבטיות קרח משפרות את הריכוז, מגבירות את רמת הערנות ותורמות לבהירות מחשבתית - אידיאלי ליזמים ואנשי מקצוע.",
-      "home_p_23": "חשיפה קבועה לקור מחזקת את מערכת החיסון, מגבירה את ייצור תאי הדם הלבנים ומפחיתה דלקות בגוף.",
-      "home_p_24": "הטבילה במים קרים משחררת אנדורפינים, מפחיתה את רמות הקורטיזול ומספקת תחושת רוגע ושלווה מיידית.",
-      "home_p_25": "ספורטאים מדווחים על שיפור משמעותי בזמני ההתאוששות, הפחתת כאבי שרירים ועלייה ביכולת הסיבולת.",
-      "home_p_26": "חשיפה לקור מגבירה את חילוף החומרים, מפעילה שומן חום ותורמת לשריפת קלוריות גם בזמן מנוחה.",
-      "home_p_27": "ב-SAMUI אנו מציעים מגוון רחב של סדנאות וריטריטים המותאמים אישית לצרכים שלכם",
-      "home_p_28": "תוכניות אימון מיוחדות המשלבות אמבטיות קרח עם טכניקות נשימה לשיפור הביצועים וההתאוששות המהירה.",
-      "home_p_29": "חוויה טיפולית גוף ונפש המותאמת לאנשי עסקים המחפשים דרכים לשפר את המיקוד והפרודוקטיביות.",
-      "home_p_30": "תוכניות מיוחדות לאנשי מקצוע בתפקידים מלחיצים, המשלבות אמבטיות קרח עם מדיטציה ורגיעה.",
-      "home_p_31": "SAMUI היא מובילה בתחום אמבטיות הקרח בישראל, עם ניסיון רב שנים בהדרכת ספורטאים, יזמים ואנשי מקצוע. אנו משלבים גישה מקצועית עם הבנה עמוקה של הצרכים האישיים של כל משתתף.",
-      "home_p_32": "\"הסדנאות של SAMUI שינו את הגישה שלי לאימונים. ההתאוששות שלי משמעותית יותר מהירה והביצועים שלי השתפרו בצורה ניכרת. ממליץ בחום!\"",
-      "home_p_33": "\"כיזם, אני תמיד מחפש דרכים לשפר את המיקוד והאנרגיה שלי. הריטריט של SAMUI נתן לי כלים מעשיים שאני משתמש בהם מדי יום. חוויה משנת חיים!\"",
-      "home_p_34": "\"אחרי שנים של עבודה מלחיצה, מצאתי ב-SAMUI דרך טבעית להתמודד עם המתח. אמבטיות הקרח הפכו לחלק קבוע מהשגרה שלי והן משפיעות מאוד על איכות החיים שלי.\"",
-      "home_p_35": "הצטרפו לאלפי אנשים שכבר חווים את היתרונות המדהימים של אמבטיות הקרח",
-      "home_p_36": "© 2025 SAMUI. כל הזכויות שמורות.",
-      "home_p_37": "נוצר באמצעותZappy",
-      "home_span_38": "ספורטאי מקצועי",
-      "home_span_39": "יזמת ומנהלת חברת הייטק",
-      "home_span_40": "מנהל פיננסי",
       "home_link_41": "Zappy",
       "home_link_42": "הזמן סדנה",
       "home_link_43": "גלה עוד",
@@ -268,22 +222,27 @@
       "home_link_47": "נגישות",
       "home_link_48": "תנאי שימוש",
       "home_link_49": "Zappy",
-      "home_li_50": "מדריכים מוסמכים ומנוסים",
-      "home_li_51": "ציוד מתקדם ובטיחותי",
-      "home_li_52": "תוכניות מותאמות אישית",
-      "home_li_53": "ליווי מקצועי לאורך כל התהליך",
-      "home_li_54": "סביבה בטוחה ומקצועית",
-      "home_nav_55": "שירותים",
-      "home_nav_56": "אודות",
-      "home_nav_57": "צור קשר",
-      "home_alt_58": "SAMUI",
-      "home_alt_59": "אמבטיית קרח מקצועית בסביבה טבעית",
-      "home_alt_60": "סדנת אמבטיות קרח לספורטאים",
-      "home_alt_61": "ריטריט קרח ליזמים",
-      "home_alt_62": "סדנאות להפחתת מתחים",
-      "home_alt_63": "הדרכה מקצועית באמבטיות קרח",
-      "home_meta_description": "גלו את היתרונות הבריאותיים של אמבטיות קרח עם SAMUI. סדנאות מקצועיות וריטריטים לשיפור הביצועים והבריאות.",
-      "home_page_title": "חוו את כוח אמבטיות הקרח — SAMUI",
+      "home_span_38": "ספורטאי מקצועי",
+      "home_span_39": "יזמת ומנהלת חברת הייטק",
+      "home_span_40": "מנהל פיננסי",
+      "about_link_42": "Zappy",
+      "about_link_43": "צור קשר עכשיו",
+      "about_link_44": "מדיניות פרטיות",
+      "about_link_45": "נגישות",
+      "about_link_46": "תנאי שימוש",
+      "about_link_47": "Zappy",
+      "contact_h3_10": "שעות פעילות",
+      "contact_h3_11": "האם צריך ניסיון קודם באמבטיות קרח?",
+      "contact_h3_12": "כמה זמן אורכת סדנה טיפוסית?",
+      "contact_h3_13": "מה צריך להביא לסדנה?",
+      "contact_h3_14": "האם יש הגבלות רפואיות?",
+      "contact_li_55": "יום ראשון:סגור",
+      "contact_li_56": "יום שני:סגור",
+      "contact_li_57": "יום שלישי:סגור",
+      "contact_li_58": "יום רביעי:סגור",
+      "contact_li_59": "יום חמישי:סגור",
+      "contact_li_60": "יום שישי:08:00 - 17:00",
+      "contact_li_61": "יום שבת:סגור",
       "services_h1_1": "הסדנאות והשירותים שלנו",
       "services_h2_2": "סדנאות אמבטיות קרח לספורטאים",
       "services_h2_3": "ריטריטים ליזמים ואנשי עסקים",
@@ -293,7 +252,6 @@
       "services_h2_7": "מחירים ומידע נוסף",
       "services_h3_8": "תוכניות מקצועיות ומותאמות אישית לכל צורך",
       "services_h3_9": "הדרכה אישית",
-      "services_h3_10": "ייעוץ ותכנון",
       "services_p_11": "Happily created by&nbsp;Zappy",
       "services_p_12": "הסדנאות שלנו לספורטאים מיועדות לכל מי שעוסק בפעילות גופנית אינטנסיבית ומחפש דרכים לשפר את הביצועים ולהאיץ את תהליכי ההתאוששות. אנו משלבים טכניקות אמבטיות קרח מתקדמות עם תרגילי נשימה ייעודיים, המבוססים על מחקרים מדעיים עדכניים.",
       "services_p_13": "במהלך הסדנה תלמדו כיצד להשתמש באמבטיות קרח באופן אופטימלי לצרכים שלכם, תבינו את המנגנונים הפיזיולוגיים העומדים בבסיס היתרונות, ותקבלו תוכנית אימון אישית המותאמת למטרות הספורטיביות שלכם. המשתתפים מדווחים על שיפור משמעותי בזמני ההתאוששות, הפחתת כאבי שרירים ועלייה ביכולת הסיבולת.",
@@ -308,12 +266,12 @@
       "services_p_22": "המחירים משתנים בהתאם לסוג הסדנה, משך התוכנית ומספר המשתתפים. אנו מציעים מגוון אפשרויות תשלום גמישות ומבצעים מיוחדים לקבוצות. לפרטים מלאים ולהצעת מחיר אישית, צרו איתנו קשר.",
       "services_p_23": "© 2025 SAMUI. כל הזכויות שמורות.",
       "services_p_24": "נוצר באמצעותZappy",
-      "services_link_25": "Zappy",
-      "services_link_26": "בקש הצעת מחיר",
-      "services_link_27": "מדיניות פרטיות",
-      "services_link_28": "נגישות",
-      "services_link_29": "תנאי שימוש",
-      "services_link_30": "Zappy",
+      "contact_alt_69": "SAMUI",
+      "contact_btn_48": "שלח הודעה",
+      "contact_nav_62": "שירותים",
+      "contact_nav_63": "אודות",
+      "contact_nav_64": "צור קשר",
+      "services_h3_10": "ייעוץ ותכנון",
       "services_li_31": "שיפור זמני התאוששות בין אימונים",
       "services_li_32": "הפחתת דלקות ונפיחויות",
       "services_li_33": "שיפור גמישות השרירים",
@@ -334,9 +292,28 @@
       "services_li_48": "חוויה ייחודית ובלתי נשכחת",
       "services_li_49": "התאמה מלאה לצרכי הארגון",
       "services_li_50": "הדרכה מקצועית וליווי צמוד",
-      "services_nav_51": "שירותים",
-      "services_nav_52": "אודות",
-      "services_nav_53": "צור קשר",
+      "contact_link_41": "Zappy",
+      "contact_link_42": "shai.gindi@gmail.com",
+      "contact_link_43": "שלח הודעה",
+      "contact_link_44": "מדיניות פרטיות",
+      "contact_link_45": "נגישות",
+      "contact_link_46": "תנאי שימוש",
+      "contact_link_47": "Zappy",
+      "contact_span_27": "יום ראשון:",
+      "contact_span_28": "סגור",
+      "contact_span_29": "יום שני:",
+      "contact_span_30": "סגור",
+      "contact_span_31": "יום שלישי:",
+      "contact_span_32": "סגור",
+      "contact_span_33": "יום רביעי:",
+      "contact_span_34": "סגור",
+      "contact_span_35": "יום חמישי:",
+      "contact_span_36": "סגור",
+      "contact_span_37": "יום שישי:",
+      "contact_span_38": "יום שבת:",
+      "contact_span_39": "סגור",
+      "contact_span_40": "אני מסכים/ה לתנאי השימוש ולמדיניות הפרטיות*",
+      "home_page_title": "חוו את כוח אמבטיות הקרח — SAMUI",
       "services_alt_54": "SAMUI",
       "services_alt_55": "סדנת אמבטיות קרח לספורטאים מקצועיים",
       "services_alt_56": "ריטריט קרח ליזמים ואנשי עסקים",
@@ -344,12 +321,65 @@
       "services_alt_58": "סדנאות קבוצתיות באמבטיות קרח",
       "services_alt_59": "הדרכה אישית באמבטיות קרח",
       "services_alt_60": "ייעוץ מקצועי לשילוב אמבטיות קרח",
-      "services_meta_description": "גלו את מגוון הסדנאות והריטריטים של SAMUI: אמבטיות קרח לספורטאים, יזמים ואנשי מקצוע. תוכניות מותאמות אישית.",
-      "services_page_title": "סדנאות וריטריטים מקצועיים — SAMUI"
+      "services_nav_51": "שירותים",
+      "services_nav_52": "אודות",
+      "services_nav_53": "צור קשר",
+      "about_page_title": "הסיפור שלנו ומי אנחנו — SAMUI",
+      "contact_label_49": "שם מלא*",
+      "contact_label_50": "אימייל*",
+      "contact_label_51": "טלפון*",
+      "contact_label_52": "סוג השירות המעניין",
+      "contact_label_53": "הודעה",
+      "contact_label_54": "אני מסכים/ה לתנאי השימוש ולמדיניות הפרטיות*",
+      "services_link_25": "Zappy",
+      "services_link_26": "בקש הצעת מחיר",
+      "services_link_27": "מדיניות פרטיות",
+      "services_link_28": "נגישות",
+      "services_link_29": "תנאי שימוש",
+      "services_link_30": "Zappy",
+      "contact_page_title": "צור קשר עכשיו — SAMUI",
+      "services_page_title": "סדנאות וריטריטים מקצועיים — SAMUI",
+      "home_meta_description": "גלו את היתרונות הבריאותיים של אמבטיות קרח עם SAMUI. סדנאות מקצועיות וריטריטים לשיפור הביצועים והבריאות.",
+      "about_meta_description": "הכירו את SAMUI - מובילים בתחום אמבטיות הקרח בישראל. הסיפור שלנו, הצוות המקצועי והגישה הייחודית שלנו.",
+      "contact_placeholder_65": "הזינו את שמכם המלא",
+      "contact_placeholder_66": "your@email.com",
+      "contact_placeholder_67": "050-1234567",
+      "contact_placeholder_68": "ספרו לנו קצת על עצמכם ועל המטרות שלכם",
+      "contact_meta_description": "צרו קשר עם SAMUI לפרטים נוספים על סדנאות אמבטיות קרח, ריטריטים ותוכניות מותאמות אישית. אנחנו כאן לעזור.",
+      "services_meta_description": "גלו את מגוון הסדנאות והריטריטים של SAMUI: אמבטיות קרח לספורטאים, יזמים ואנשי מקצוע. תוכניות מותאמות אישית."
     }
   },
   "en": {
     "translation": {
+      "home_h1_1": "Experience the Power of Ice Baths for Health and Quality of Life",
+      "home_h2_2": "Why Ice Baths?",
+      "home_h2_3": "The Health Benefits of Ice Baths",
+      "home_h2_4": "Our Workshops and Services",
+      "home_h2_5": "Why Choose SAMUI?",
+      "home_h2_6": "What Our Participants Say",
+      "home_h2_7": "Ready to Start Your Journey?",
+      "home_h3_8": "Professional workshops and retreats tailored for athletes, entrepreneurs, and professionals.",
+      "home_h3_9": "Improved Blood Circulation",
+      "home_p_18": "Happily created by&nbsp;Zappy",
+      "home_p_19": "Ice baths are the perfect tool for improving athletic performance, reducing stress, and boosting energy levels. In the modern era, more and more leading athletes, entrepreneurs, and professionals are discovering the amazing benefits of cold water immersion. Research shows that regular cold exposure improves the immune system, enhances concentration, and contributes to mental health.",
+      "home_p_20": "At SAMUI, we believe in a holistic approach that combines the physical and mental benefits of ice baths. Our workshops are designed for anyone seeking a natural and effective way to improve quality of life, cope with daily stress, and reach peak performance.",
+      "home_p_21": "Cold water exposure increases blood flow, improves oxygen delivery to muscles, and accelerates recovery processes after intense training.",
+      "home_p_22": "Ice baths improve concentration, increase alertness levels, and contribute to mental clarity - ideal for entrepreneurs and professionals.",
+      "home_p_23": "Regular cold exposure strengthens the immune system, increases white blood cell production, and reduces inflammation in the body.",
+      "home_p_24": "Cold water immersion releases endorphins, reduces cortisol levels, and provides an immediate sense of calm and tranquility.",
+      "home_p_25": "Athletes report significant improvement in recovery times, reduced muscle pain, and increased endurance capacity.",
+      "home_p_26": "Cold exposure increases metabolism, activates brown fat, and contributes to calorie burning even during rest.",
+      "home_p_27": "At SAMUI, we offer a wide range of workshops and retreats customized to your specific needs",
+      "home_p_28": "Specialized training programs that combine ice baths with breathing techniques to improve performance and rapid recovery.",
+      "home_p_29": "A therapeutic mind-body experience tailored for business professionals seeking ways to improve focus and productivity.",
+      "home_p_30": "Special programs for professionals in high-stress roles, combining ice baths with meditation and relaxation.",
+      "home_p_31": "SAMUI is a leader in the field of ice baths in Israel, with years of experience training athletes, entrepreneurs, and professionals. We combine a professional approach with deep understanding of each participant's personal needs.",
+      "home_p_32": "\"SAMUI's workshops changed my approach to training. My recovery is significantly faster and my performance has improved dramatically. Highly recommend!\"",
+      "home_p_33": "\"As an entrepreneur, I'm always looking for ways to improve my focus and energy. SAMUI's retreat gave me practical tools I use daily. A life-changing experience!\"",
+      "home_p_34": "\"After years of stressful work, I found a natural way to deal with stress at SAMUI. Ice baths have become a regular part of my routine and greatly impact my quality of life.\"",
+      "home_p_35": "Join thousands of people who are already experiencing the amazing benefits of ice baths",
+      "home_p_36": "© 2025 SAMUI. All rights reserved.",
+      "home_p_37": "Created with Zappy",
       "about_h1_1": "Our Story",
       "about_h2_2": "Our Story",
       "about_h2_3": "Our Mission",
@@ -359,16 +389,6 @@
       "about_h2_7": "What Makes SAMUI Special",
       "about_h2_8": "Ready to Join the SAMUI Family?",
       "about_h3_9": "A Journey of Discovery, Learning and Empowerment Through Ice Baths",
-      "about_h3_10": "Maximum Safety",
-      "about_h3_11": "Personal Customization",
-      "about_h3_12": "Scientific Approach",
-      "about_h3_13": "Ongoing Support",
-      "about_h3_14": "Certified Instructors",
-      "about_h3_15": "Research-Based Approach",
-      "about_h3_16": "Supportive Community",
-      "about_h3_17": "Advanced Equipment",
-      "about_h3_18": "Tracking and Progress",
-      "about_h3_19": "Commitment to Results",
       "about_p_20": "Happily created by&nbsp;Zappy",
       "about_p_21": "SAMUI was born from a personal search for natural ways to improve quality of life, performance and health. Our founders, who worked for years in sports, health and personal development, discovered the amazing power of ice baths when seeking solutions to cope with daily stress and improve athletic performance.",
       "about_p_22": "What started as a personal experiment quickly became a deep passion. After experiencing firsthand the significant changes that ice baths brought to our lives - improved sleep, increased energy levels, enhanced mental clarity and faster recovery from workouts - we realized we had to share this knowledge and experience with others.",
@@ -391,19 +411,43 @@
       "about_p_39": "Come discover how ice baths can change your life",
       "about_p_40": "© 2025 SAMUI. All rights reserved.",
       "about_p_41": "Created with Zappy",
-      "about_link_42": "Zappy",
-      "about_link_43": "Contact Us Now",
-      "about_link_44": "Privacy Policy",
-      "about_link_45": "Accessibility",
-      "about_link_46": "Terms of Use",
-      "about_link_47": "Zappy",
+      "home_h3_10": "Mental Sharpness",
+      "home_h3_11": "Strengthened Immune System",
+      "home_h3_12": "Reduced Stress and Anxiety",
+      "home_h3_13": "Enhanced Athletic Performance",
+      "home_h3_14": "Natural Fat Burning",
+      "home_h3_15": "Workshops for Athletes",
+      "home_h3_16": "Retreats for Entrepreneurs",
+      "home_h3_17": "Stress Reduction Workshops",
+      "home_li_50": "Certified and experienced instructors",
+      "home_li_51": "Advanced and safe equipment",
+      "home_li_52": "Personally customized programs",
+      "home_li_53": "Professional guidance throughout the entire process",
+      "home_li_54": "Safe and professional environment",
+      "about_h3_10": "Maximum Safety",
+      "about_h3_11": "Personal Customization",
+      "about_h3_12": "Scientific Approach",
+      "about_h3_13": "Ongoing Support",
+      "about_h3_14": "Certified Instructors",
+      "about_h3_15": "Research-Based Approach",
+      "about_h3_16": "Supportive Community",
+      "about_h3_17": "Advanced Equipment",
+      "about_h3_18": "Tracking and Progress",
+      "about_h3_19": "Commitment to Results",
+      "home_alt_58": "SAMUI",
+      "home_alt_59": "Professional ice bath in natural environment",
+      "home_alt_60": "Ice bath workshop for athletes",
+      "home_alt_61": "Ice retreat for entrepreneurs",
+      "home_alt_62": "Stress reduction workshops",
+      "home_alt_63": "Professional ice bath instruction",
+      "home_nav_55": "Services",
+      "home_nav_56": "About",
+      "home_nav_57": "Contact",
+      "about_alt_51": "SAMUI",
+      "about_alt_52": "Man with crossed arms, wearing Quicksilver shirt. Variant 1.",
       "about_nav_48": "Services",
       "about_nav_49": "About",
       "about_nav_50": "Contact",
-      "about_alt_51": "SAMUI",
-      "about_alt_52": "Man with crossed arms, wearing Quicksilver shirt. Variant 1.",
-      "about_meta_description": "Meet SAMUI - leaders in ice baths in Israel. Our story, professional team and unique approach.",
-      "about_page_title": "Our Story and Who We Are — SAMUI",
       "contact_h1_1": "Contact Us",
       "contact_h2_2": "Contact Details",
       "contact_h2_3": "Send Us a Message",
@@ -413,11 +457,6 @@
       "contact_h3_7": "Email",
       "contact_h3_8": "WhatsApp",
       "contact_h3_9": "Address",
-      "contact_h3_10": "Operating Hours",
-      "contact_h3_11": "Do I need previous experience with ice baths?",
-      "contact_h3_12": "How long does a typical workshop last?",
-      "contact_h3_13": "What should I bring to the workshop?",
-      "contact_h3_14": "Are there any medical restrictions?",
       "contact_p_15": "Happily created by&nbsp;Zappy",
       "contact_p_16": "We're here to help you. Contact us in any way that's convenient for you and we'll get back to you as soon as possible.",
       "contact_p_17": "shai.gindi@gmail.com",
@@ -430,91 +469,6 @@
       "contact_p_24": "There are some medical conditions that may be contraindications. We'd be happy to discuss this with you personally and adapt the workshop accordingly. Participant safety is our top priority.",
       "contact_p_25": "© 2025 SAMUI. All rights reserved.",
       "contact_p_26": "Created with Zappy",
-      "contact_span_27": "Sunday:",
-      "contact_span_28": "Closed",
-      "contact_span_29": "Monday:",
-      "contact_span_30": "Closed",
-      "contact_span_31": "Tuesday:",
-      "contact_span_32": "Closed",
-      "contact_span_33": "Wednesday:",
-      "contact_span_34": "Closed",
-      "contact_span_35": "Thursday:",
-      "contact_span_36": "Closed",
-      "contact_span_37": "Friday:",
-      "contact_span_38": "Saturday:",
-      "contact_span_39": "Closed",
-      "contact_span_40": "I agree to the terms of use and privacy policy*",
-      "contact_link_41": "Zappy",
-      "contact_link_42": "shai.gindi@gmail.com",
-      "contact_link_43": "Send Message",
-      "contact_link_44": "Privacy Policy",
-      "contact_link_45": "Accessibility",
-      "contact_link_46": "Terms of Use",
-      "contact_link_47": "Zappy",
-      "contact_btn_48": "Send Message",
-      "contact_label_49": "Full Name*",
-      "contact_label_50": "Email*",
-      "contact_label_51": "Phone*",
-      "contact_label_52": "Type of Service of Interest",
-      "contact_label_53": "Message",
-      "contact_label_54": "I agree to the Terms of Use and Privacy Policy*",
-      "contact_li_55": "Sunday: Closed",
-      "contact_li_56": "Monday: Closed",
-      "contact_li_57": "Tuesday: Closed",
-      "contact_li_58": "Wednesday: Closed",
-      "contact_li_59": "Thursday: Closed",
-      "contact_li_60": "Friday: 08:00 - 17:00",
-      "contact_li_61": "Saturday: Closed",
-      "contact_nav_62": "Services",
-      "contact_nav_63": "About",
-      "contact_nav_64": "Contact",
-      "contact_placeholder_65": "Enter your full name",
-      "contact_placeholder_66": "your@email.com",
-      "contact_placeholder_67": "050-1234567",
-      "contact_placeholder_68": "Tell us a bit about yourself and your goals",
-      "contact_alt_69": "SAMUI",
-      "contact_meta_description": "Contact SAMUI for more details about ice bath workshops, retreats, and personalized programs. We're here to help.",
-      "contact_page_title": "Contact Now — SAMUI",
-      "home_h1_1": "Experience the Power of Ice Baths for Health and Quality of Life",
-      "home_h2_2": "Why Ice Baths?",
-      "home_h2_3": "The Health Benefits of Ice Baths",
-      "home_h2_4": "Our Workshops and Services",
-      "home_h2_5": "Why Choose SAMUI?",
-      "home_h2_6": "What Our Participants Say",
-      "home_h2_7": "Ready to Start Your Journey?",
-      "home_h3_8": "Professional workshops and retreats tailored for athletes, entrepreneurs, and professionals.",
-      "home_h3_9": "Improved Blood Circulation",
-      "home_h3_10": "Mental Sharpness",
-      "home_h3_11": "Strengthened Immune System",
-      "home_h3_12": "Reduced Stress and Anxiety",
-      "home_h3_13": "Enhanced Athletic Performance",
-      "home_h3_14": "Natural Fat Burning",
-      "home_h3_15": "Workshops for Athletes",
-      "home_h3_16": "Retreats for Entrepreneurs",
-      "home_h3_17": "Stress Reduction Workshops",
-      "home_p_18": "Happily created by&nbsp;Zappy",
-      "home_p_19": "Ice baths are the perfect tool for improving athletic performance, reducing stress, and boosting energy levels. In the modern era, more and more leading athletes, entrepreneurs, and professionals are discovering the amazing benefits of cold water immersion. Research shows that regular cold exposure improves the immune system, enhances concentration, and contributes to mental health.",
-      "home_p_20": "At SAMUI, we believe in a holistic approach that combines the physical and mental benefits of ice baths. Our workshops are designed for anyone seeking a natural and effective way to improve quality of life, cope with daily stress, and reach peak performance.",
-      "home_p_21": "Cold water exposure increases blood flow, improves oxygen delivery to muscles, and accelerates recovery processes after intense training.",
-      "home_p_22": "Ice baths improve concentration, increase alertness levels, and contribute to mental clarity - ideal for entrepreneurs and professionals.",
-      "home_p_23": "Regular cold exposure strengthens the immune system, increases white blood cell production, and reduces inflammation in the body.",
-      "home_p_24": "Cold water immersion releases endorphins, reduces cortisol levels, and provides an immediate sense of calm and tranquility.",
-      "home_p_25": "Athletes report significant improvement in recovery times, reduced muscle pain, and increased endurance capacity.",
-      "home_p_26": "Cold exposure increases metabolism, activates brown fat, and contributes to calorie burning even during rest.",
-      "home_p_27": "At SAMUI, we offer a wide range of workshops and retreats customized to your specific needs",
-      "home_p_28": "Specialized training programs that combine ice baths with breathing techniques to improve performance and rapid recovery.",
-      "home_p_29": "A therapeutic mind-body experience tailored for business professionals seeking ways to improve focus and productivity.",
-      "home_p_30": "Special programs for professionals in high-stress roles, combining ice baths with meditation and relaxation.",
-      "home_p_31": "SAMUI is a leader in the field of ice baths in Israel, with years of experience training athletes, entrepreneurs, and professionals. We combine a professional approach with deep understanding of each participant's personal needs.",
-      "home_p_32": "\"SAMUI's workshops changed my approach to training. My recovery is significantly faster and my performance has improved dramatically. Highly recommend!\"",
-      "home_p_33": "\"As an entrepreneur, I'm always looking for ways to improve my focus and energy. SAMUI's retreat gave me practical tools I use daily. A life-changing experience!\"",
-      "home_p_34": "\"After years of stressful work, I found a natural way to deal with stress at SAMUI. Ice baths have become a regular part of my routine and greatly impact my quality of life.\"",
-      "home_p_35": "Join thousands of people who are already experiencing the amazing benefits of ice baths",
-      "home_p_36": "© 2025 SAMUI. All rights reserved.",
-      "home_p_37": "Created with Zappy",
-      "home_span_38": "Professional Athlete",
-      "home_span_39": "Entrepreneur and High-Tech Company Manager",
-      "home_span_40": "Financial Manager",
       "home_link_41": "Zappy",
       "home_link_42": "Book a Workshop",
       "home_link_43": "Discover More",
@@ -524,22 +478,27 @@
       "home_link_47": "Accessibility",
       "home_link_48": "Terms of Use",
       "home_link_49": "Zappy",
-      "home_li_50": "Certified and experienced instructors",
-      "home_li_51": "Advanced and safe equipment",
-      "home_li_52": "Personally customized programs",
-      "home_li_53": "Professional guidance throughout the entire process",
-      "home_li_54": "Safe and professional environment",
-      "home_nav_55": "Services",
-      "home_nav_56": "About",
-      "home_nav_57": "Contact",
-      "home_alt_58": "SAMUI",
-      "home_alt_59": "Professional ice bath in natural environment",
-      "home_alt_60": "Ice bath workshop for athletes",
-      "home_alt_61": "Ice retreat for entrepreneurs",
-      "home_alt_62": "Stress reduction workshops",
-      "home_alt_63": "Professional ice bath instruction",
-      "home_meta_description": "Discover the health benefits of ice baths with SAMUI. Professional workshops and retreats to improve performance and health.",
-      "home_page_title": "Experience the Power of Ice Baths — SAMUI",
+      "home_span_38": "Professional Athlete",
+      "home_span_39": "Entrepreneur and High-Tech Company Manager",
+      "home_span_40": "Financial Manager",
+      "about_link_42": "Zappy",
+      "about_link_43": "Contact Us Now",
+      "about_link_44": "Privacy Policy",
+      "about_link_45": "Accessibility",
+      "about_link_46": "Terms of Use",
+      "about_link_47": "Zappy",
+      "contact_h3_10": "Operating Hours",
+      "contact_h3_11": "Do I need previous experience with ice baths?",
+      "contact_h3_12": "How long does a typical workshop last?",
+      "contact_h3_13": "What should I bring to the workshop?",
+      "contact_h3_14": "Are there any medical restrictions?",
+      "contact_li_55": "Sunday: Closed",
+      "contact_li_56": "Monday: Closed",
+      "contact_li_57": "Tuesday: Closed",
+      "contact_li_58": "Wednesday: Closed",
+      "contact_li_59": "Thursday: Closed",
+      "contact_li_60": "Friday: 08:00 - 17:00",
+      "contact_li_61": "Saturday: Closed",
       "services_h1_1": "Our Workshops and Services",
       "services_h2_2": "Ice Bath Workshops for Athletes",
       "services_h2_3": "Retreats for Entrepreneurs and Business Professionals",
@@ -549,7 +508,6 @@
       "services_h2_7": "Pricing and Additional Information",
       "services_h3_8": "Professional and personally customized programs for every need",
       "services_h3_9": "Personal Training",
-      "services_h3_10": "Consultation and Planning",
       "services_p_11": "Happily created by&nbsp;Zappy",
       "services_p_12": "Our workshops for athletes are designed for anyone engaged in intensive physical activity who seeks ways to improve performance and accelerate recovery processes. We combine advanced ice bath techniques with dedicated breathing exercises, based on current scientific research.",
       "services_p_13": "During the workshop, you'll learn how to use ice baths optimally for your needs, understand the physiological mechanisms underlying the benefits, and receive a personalized training plan tailored to your athletic goals. Participants report significant improvement in recovery times, reduced muscle soreness, and increased endurance capacity.",
@@ -564,12 +522,12 @@
       "services_p_22": "Prices vary according to workshop type, program duration, and number of participants. We offer a variety of flexible payment options and special deals for groups. For full details and a personalized quote, contact us.",
       "services_p_23": "© 2025 SAMUI. All rights reserved.",
       "services_p_24": "Created with Zappy",
-      "services_link_25": "Zappy",
-      "services_link_26": "Request a Quote",
-      "services_link_27": "Privacy Policy",
-      "services_link_28": "Accessibility",
-      "services_link_29": "Terms of Use",
-      "services_link_30": "Zappy",
+      "contact_alt_69": "SAMUI",
+      "contact_btn_48": "Send Message",
+      "contact_nav_62": "Services",
+      "contact_nav_63": "About",
+      "contact_nav_64": "Contact",
+      "services_h3_10": "Consultation and Planning",
       "services_li_31": "Improved recovery times between workouts",
       "services_li_32": "Reduced inflammation and swelling",
       "services_li_33": "Improved muscle flexibility",
@@ -590,9 +548,28 @@
       "services_li_48": "Unique and unforgettable experience",
       "services_li_49": "Full customization to organizational needs",
       "services_li_50": "Professional instruction and close supervision",
-      "services_nav_51": "Services",
-      "services_nav_52": "About",
-      "services_nav_53": "Contact",
+      "contact_link_41": "Zappy",
+      "contact_link_42": "shai.gindi@gmail.com",
+      "contact_link_43": "Send Message",
+      "contact_link_44": "Privacy Policy",
+      "contact_link_45": "Accessibility",
+      "contact_link_46": "Terms of Use",
+      "contact_link_47": "Zappy",
+      "contact_span_27": "Sunday:",
+      "contact_span_28": "Closed",
+      "contact_span_29": "Monday:",
+      "contact_span_30": "Closed",
+      "contact_span_31": "Tuesday:",
+      "contact_span_32": "Closed",
+      "contact_span_33": "Wednesday:",
+      "contact_span_34": "Closed",
+      "contact_span_35": "Thursday:",
+      "contact_span_36": "Closed",
+      "contact_span_37": "Friday:",
+      "contact_span_38": "Saturday:",
+      "contact_span_39": "Closed",
+      "contact_span_40": "I agree to the terms of use and privacy policy*",
+      "home_page_title": "Experience the Power of Ice Baths — SAMUI",
       "services_alt_54": "SAMUI",
       "services_alt_55": "Ice bath workshop for professional athletes",
       "services_alt_56": "Ice retreat for entrepreneurs and business professionals",
@@ -600,8 +577,32 @@
       "services_alt_58": "Group ice bath workshops",
       "services_alt_59": "Personal ice bath instruction",
       "services_alt_60": "Professional consultation for ice bath integration",
-      "services_meta_description": "Discover SAMUI's range of workshops and retreats: ice baths for athletes, entrepreneurs and professionals. Personalized programs.",
-      "services_page_title": "Professional Workshops and Retreats — SAMUI"
+      "services_nav_51": "Services",
+      "services_nav_52": "About",
+      "services_nav_53": "Contact",
+      "about_page_title": "Our Story and Who We Are — SAMUI",
+      "contact_label_49": "Full Name*",
+      "contact_label_50": "Email*",
+      "contact_label_51": "Phone*",
+      "contact_label_52": "Type of Service of Interest",
+      "contact_label_53": "Message",
+      "contact_label_54": "I agree to the Terms of Use and Privacy Policy*",
+      "services_link_25": "Zappy",
+      "services_link_26": "Request a Quote",
+      "services_link_27": "Privacy Policy",
+      "services_link_28": "Accessibility",
+      "services_link_29": "Terms of Use",
+      "services_link_30": "Zappy",
+      "contact_page_title": "Contact Now — SAMUI",
+      "services_page_title": "Professional Workshops and Retreats — SAMUI",
+      "home_meta_description": "Discover the health benefits of ice baths with SAMUI. Professional workshops and retreats to improve performance and health.",
+      "about_meta_description": "Meet SAMUI - leaders in ice baths in Israel. Our story, professional team and unique approach.",
+      "contact_placeholder_65": "Enter your full name",
+      "contact_placeholder_66": "your@email.com",
+      "contact_placeholder_67": "050-1234567",
+      "contact_placeholder_68": "Tell us a bit about yourself and your goals",
+      "contact_meta_description": "Contact SAMUI for more details about ice bath workshops, retreats, and personalized programs. We're here to help.",
+      "services_meta_description": "Discover SAMUI's range of workshops and retreats: ice baths for athletes, entrepreneurs and professionals. Personalized programs."
     }
   }
 };
@@ -648,6 +649,10 @@
       localStorage.setItem('zappy_lang', lang);
       updateContent();
       updateDirection();
+      // Re-detect icon color after direction change (background may differ)
+      fixLanguageSwitcherColor();
+      // Also re-check after a short delay to ensure styles are applied
+      setTimeout(fixLanguageSwitcherColor, 100);
       return Promise.resolve();
     },
     getCurrentLanguage: function() { return this.language; },
@@ -658,18 +663,23 @@
   function updateContent() {
     // Newline character for detection
     var newlineChar = String.fromCharCode(10);
+    // HTML tag pattern for detection (common formatting tags)
+    var htmlTagPattern = /<(font|b|i|u|strong|em|span|br|a|sub|sup|mark|del|ins|s|small|big)[^>]*>/i;
     
-    // Update text content - use innerHTML only when text contains line breaks
+    // Update text content - use innerHTML when text contains line breaks or HTML tags
     document.querySelectorAll('[data-i18n]').forEach(function(el) {
       var key = el.getAttribute('data-i18n');
       var translation = zappyI18n.t(key);
       if (translation && translation !== key) {
-        // Check if translation contains newlines that need to be rendered as <br>
-        if (translation.indexOf(newlineChar) !== -1) {
+        // Check if translation contains newlines or HTML formatting tags
+        var hasNewlines = translation.indexOf(newlineChar) !== -1;
+        var hasHtmlTags = htmlTagPattern.test(translation);
+        
+        if (hasNewlines || hasHtmlTags) {
           // Convert newlines to <br> and use innerHTML to preserve HTML formatting
           el.innerHTML = translation.split(newlineChar).join('<br>');
         } else {
-          // No newlines, use textContent for safety
+          // No HTML content, use textContent for safety
           el.textContent = translation;
         }
       }
@@ -754,69 +764,81 @@
       el.style.textAlign = isRTL ? 'right' : 'left';
     });
     
-    // Update navigation/header - set direction and justify-content
-    // Don't set flex-direction here - let CSS handle it with media queries to preserve mobile menu
-    document.querySelectorAll('header, nav, .navbar, .nav-container, .header-container').forEach(function(el) {
-      el.style.direction = newDir;
-      el.style.justifyContent = 'flex-start';
-      // Only set flex-direction on desktop (check viewport width)
-      if (window.innerWidth >= 768) {
-        el.style.flexDirection = 'row';
-      }
+    // IMPORTANT: Do NOT set direction on navigation flex containers!
+    // V2 sites have layouts designed for a specific direction.
+    // Changing inline direction on flex containers reverses the item order, breaking layouts.
+    // Instead, we rely on the dir attribute on <html> for text direction,
+    // and let the original CSS handle navigation layout.
+    
+    // Remove dir ATTRIBUTE from nav elements - they should inherit from <html>
+    // V2 sites may have hardcoded dir="rtl" on nav elements which needs to be removed
+    document.querySelectorAll('header, nav, .navbar, .nav-container, .header-container, .nav-links, .menu, nav ul, header ul, #navMenu').forEach(function(el) {
+      // Remove dir attribute so element inherits from <html>
+      el.removeAttribute('dir');
+      // Remove all layout-affecting inline styles - let original CSS take over
+      el.style.removeProperty('direction');
+      el.style.removeProperty('flex-direction');
+      el.style.removeProperty('justify-content');
+      el.style.removeProperty('margin-left');
+      el.style.removeProperty('margin-right');
     });
     
-    // Update nav menus/links container - reset margins (include #navMenu id selector)
-    // Don't override flex-direction on mobile menus
-    document.querySelectorAll('.nav-menu, .nav-links, .menu, nav ul, header ul, #navMenu').forEach(function(el) {
-      el.style.direction = newDir;
-      el.style.marginLeft = '0';
-      el.style.marginRight = '0';
-      // Only set flex-direction on desktop
-      if (window.innerWidth >= 768) {
-        el.style.flexDirection = 'row';
-      }
-    });
-    
-    // Reset all nav link margins to keep them near logo
-    document.querySelectorAll('header > a, nav > a, .nav-menu > a, .nav-links > a, nav ul li, header ul li').forEach(function(el) {
-      // Skip CTA buttons - they need their auto margin
-      if (el.classList.contains('btn') || el.classList.contains('button') || el.classList.contains('cta') || 
-          el.className.includes('btn-') || el.className.includes('button-')) {
-        return;
-      }
-      el.style.marginLeft = '0';
-      el.style.marginRight = '0';
-    });
-    
-    // Reset logo margins (including nav-brand class)
-    document.querySelectorAll('.logo, .site-logo, .brand, .navbar-brand, .nav-brand').forEach(function(el) {
-      el.style.marginLeft = '0';
-      el.style.marginRight = '0';
-    });
-    
-    // Position language switcher next to CTA - it should have the auto margin to push both to the end
-    document.querySelectorAll('header .lang-switcher, nav .lang-switcher, .navbar .lang-switcher').forEach(function(el) {
+    // SPECIAL HANDLING for nav elements
+    document.querySelectorAll('.nav-menu, #navMenu, .nav-right-group').forEach(function(el) {
+      el.removeAttribute('dir');
+      el.style.removeProperty('direction');
+      el.style.removeProperty('flex-direction');
+      el.style.removeProperty('justify-content');
       if (isRTL) {
-        el.style.marginRight = 'auto';
-        el.style.marginLeft = '8px';
+        el.style.removeProperty('margin-left');
+        el.style.removeProperty('margin-right');
       } else {
-        el.style.marginLeft = 'auto';
-        el.style.marginRight = '8px';
+        // In LTR: override CSS margin-left:auto with 0 for nav-menu elements
+        el.style.setProperty('margin-left', '0', 'important');
+        el.style.removeProperty('margin-right');
       }
     });
     
-    // CTA buttons should be right after language switcher (no auto margin needed if lang-switcher has it)
+    // CRITICAL FIX FOR V2 SITES: Move lang-switcher INSIDE nav-cta-container
+    // V2 sites use margin-left:auto on nav-cta-container to push it right.
+    // If lang-switcher is a sibling, it gets left behind. Moving it inside keeps them grouped.
+    document.querySelectorAll('.lang-switcher').forEach(function(el) {
+      var ctaContainer = el.parentElement ? el.parentElement.querySelector('.nav-cta-container') : null;
+      if (ctaContainer && el.parentElement === ctaContainer.parentElement) {
+        // Move lang-switcher as first child of CTA container
+        ctaContainer.insertBefore(el, ctaContainer.firstChild);
+      }
+      // Clear any margin overrides
+      el.style.removeProperty('margin-left');
+      el.style.removeProperty('margin-right');
+    });
+    
+    // Remove any previously set margins on nav links and logo
+    document.querySelectorAll('header > a, nav > a, .nav-menu > a, .nav-links > a, nav ul li, header ul li, .logo, .site-logo, .brand, .navbar-brand, .nav-brand').forEach(function(el) {
+      el.style.removeProperty('margin-left');
+      el.style.removeProperty('margin-right');
+    });
+    
+    // NOTE: Removed old code that set margin-left:auto on .lang-switcher
+    // This conflicted with V2 layouts. The margin handling is now done in the 
+    // special handling section above that sets margin-left:0 in LTR mode.
+    
+    // CTA buttons - remove any inline margin styles to let CSS handle positioning
     document.querySelectorAll('header .btn, header .button, header .cta, nav .btn, nav .button, .navbar .btn, .nav-cta-container, .cta-container, .header-cta, .nav-cta').forEach(function(el) {
-      // Remove auto margins from CTA since lang-switcher handles positioning
-      el.style.marginLeft = '0';
-      el.style.marginRight = '0';
+      el.style.removeProperty('margin-left');
+      el.style.removeProperty('margin-right');
     });
     
     // Globe icon SVG for language switcher button (minimal design, no chevron)
-    const globeIconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"/></svg>';
+    // Read the icon color from the data attribute (set by server based on navbar color detection)
+    var langSwitcher = document.querySelector('.lang-switcher');
+    var iconColor = langSwitcher ? langSwitcher.getAttribute('data-icon-color') : 'currentColor';
+    if (!iconColor) iconColor = 'currentColor';
+    
+    var globeIconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="' + iconColor + '" style="flex-shrink:0;"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"/></svg>';
     
     // Update language switcher display - just the globe icon, no arrow
-    const currentLangEl = document.querySelector('.lang-switcher-current');
+    var currentLangEl = document.querySelector('.lang-switcher-current');
     if (currentLangEl) {
       currentLangEl.innerHTML = globeIconSvg;
     }
@@ -845,6 +867,34 @@
         });
       });
     });
+    
+    // FIX: Update mobile button positions when language/direction changes
+    // CSS handles positioning based on html[dir] attribute.
+    // We just need to remove any inline left/right styles so CSS can take over.
+    if (window.innerWidth < 768) {
+      var mobileToggle = document.querySelector('.mobile-toggle');
+      var phoneBtn = document.querySelector('.phone-header-btn');
+      var navCtaContainer = document.querySelector('.nav-cta-container');
+      
+      // Remove inline left/right - CSS will position based on html[dir]
+      if (mobileToggle) {
+        mobileToggle.style.removeProperty('left');
+        mobileToggle.style.removeProperty('right');
+        console.log('[i18n] Cleared mobile toggle inline position - CSS will handle based on dir:', newDir);
+      }
+      
+      if (phoneBtn) {
+        phoneBtn.style.removeProperty('left');
+        phoneBtn.style.removeProperty('right');
+        console.log('[i18n] Cleared phone button inline position - CSS will handle based on dir:', newDir);
+      }
+      
+      if (navCtaContainer) {
+        navCtaContainer.style.removeProperty('left');
+        navCtaContainer.style.removeProperty('right');
+        console.log('[i18n] Cleared nav-cta-container inline position - CSS will handle based on dir:', newDir);
+      }
+    }
   }
   
   // Initialize language switcher dropdown
@@ -903,11 +953,191 @@
     });
   }
   
+  // Fix mobile menu inline styles that may have been incorrectly persisted
+  // This is needed because inline styles override CSS media queries
+  function fixMobileMenuStyles() {
+    // Only run on mobile
+    if (window.innerWidth >= 768) return;
+    
+    // Remove inline flex-direction from nav menus so CSS can take over
+    document.querySelectorAll('.nav-menu, #navMenu, nav ul, header ul').forEach(function(el) {
+      if (el.style.flexDirection) {
+        el.style.removeProperty('flex-direction');
+      }
+    });
+  }
+  
+  // Fix mobile button positioning based on current page direction
+  // Clear any inline left/right styles so CSS can take over based on html[dir]
+  function fixMobileButtonPositioning() {
+    // Only run on mobile
+    if (window.innerWidth >= 768) return;
+    
+    var mobileToggle = document.querySelector('.mobile-toggle');
+    var phoneBtn = document.querySelector('.phone-header-btn');
+    var navCtaContainer = document.querySelector('.nav-cta-container');
+    
+    // Clear inline left/right - CSS will position based on html[dir]
+    if (mobileToggle) {
+      mobileToggle.style.removeProperty('left');
+      mobileToggle.style.removeProperty('right');
+    }
+    
+    if (phoneBtn) {
+      phoneBtn.style.removeProperty('left');
+      phoneBtn.style.removeProperty('right');
+    }
+    
+    if (navCtaContainer) {
+      navCtaContainer.style.removeProperty('left');
+      navCtaContainer.style.removeProperty('right');
+    }
+    
+    console.log('[i18n] Cleared inline button positions - CSS handles based on html[dir]:', document.documentElement.dir);
+  }
+  
+  // ============================================
+  // LANGUAGE SWITCHER ICON COLOR DETECTION
+  // Dynamically detect if navbar has light/dark background
+  // and set the globe icon color accordingly
+  // ============================================
+  function fixLanguageSwitcherColor() {
+    var switcher = document.querySelector('.lang-switcher-current');
+    var svg = switcher ? switcher.querySelector('svg') : null;
+    if (!switcher || !svg) return;
+    
+    // Find the navbar or header element
+    var navbar = document.querySelector('.navbar') || 
+                 document.querySelector('nav') || 
+                 document.querySelector('header');
+    if (!navbar) return;
+    
+    // Get the effective background color by walking up the DOM tree
+    function getEffectiveBackgroundColor(element) {
+      var el = element;
+      var maxDepth = 10; // Prevent infinite loops
+      
+      while (el && maxDepth > 0) {
+        var style = window.getComputedStyle(el);
+        var bg = style.backgroundColor;
+        
+        // Skip transparent backgrounds
+        if (bg && bg !== 'transparent' && bg !== 'rgba(0, 0, 0, 0)') {
+          return bg;
+        }
+        
+        // Check background-image for gradients
+        var bgImage = style.backgroundImage;
+        if (bgImage && bgImage !== 'none') {
+          // Extract first color from gradient
+          var gradientMatch = bgImage.match(/rgba?\([^)]+\)|#[a-fA-F0-9]{3,8}/);
+          if (gradientMatch) {
+            return gradientMatch[0];
+          }
+        }
+        
+        el = el.parentElement;
+        maxDepth--;
+      }
+      
+      // Default to white if no background found (assume light)
+      return 'rgb(255, 255, 255)';
+    }
+    
+    // Parse color string to RGB values
+    function parseColor(colorStr) {
+      if (!colorStr) return null;
+      
+      // Handle rgb/rgba
+      var rgbMatch = colorStr.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);
+      if (rgbMatch) {
+        return {
+          r: parseInt(rgbMatch[1], 10),
+          g: parseInt(rgbMatch[2], 10),
+          b: parseInt(rgbMatch[3], 10)
+        };
+      }
+      
+      // Handle hex
+      var hexMatch = colorStr.match(/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/);
+      if (hexMatch) {
+        return {
+          r: parseInt(hexMatch[1], 16),
+          g: parseInt(hexMatch[2], 16),
+          b: parseInt(hexMatch[3], 16)
+        };
+      }
+      
+      // Handle 3-digit hex
+      var hex3Match = colorStr.match(/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])$/);
+      if (hex3Match) {
+        return {
+          r: parseInt(hex3Match[1] + hex3Match[1], 16),
+          g: parseInt(hex3Match[2] + hex3Match[2], 16),
+          b: parseInt(hex3Match[3] + hex3Match[3], 16)
+        };
+      }
+      
+      return null;
+    }
+    
+    // Calculate relative luminance (WCAG formula)
+    function getLuminance(rgb) {
+      if (!rgb) return 0.5; // Default to middle
+      
+      var r = rgb.r / 255;
+      var g = rgb.g / 255;
+      var b = rgb.b / 255;
+      
+      // Apply gamma correction
+      r = r <= 0.03928 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4);
+      g = g <= 0.03928 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4);
+      b = b <= 0.03928 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4);
+      
+      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    }
+    
+    // Get the effective background color
+    var bgColor = getEffectiveBackgroundColor(navbar);
+    var rgb = parseColor(bgColor);
+    var luminance = getLuminance(rgb);
+    
+    // Threshold: 0.5 is middle, lower = darker background
+    // Use 0.4 as threshold for better contrast
+    var isLightBackground = luminance > 0.4;
+    
+    // Set icon color based on background
+    // Light background = dark icon (#1a1a1a)
+    // Dark background = light icon (#F3FAFF)
+    var iconColor = isLightBackground ? '#1a1a1a' : '#F3FAFF';
+    
+    svg.style.fill = iconColor;
+    switcher.style.color = iconColor;
+    
+    console.log('[i18n] Language switcher icon color:', iconColor, 
+                '(bg luminance:', luminance.toFixed(2), 
+                ', isLight:', isLightBackground, ')');
+  }
+  
   // Initialize on DOM ready
   function init() {
     updateContent();
     updateDirection();
     initLanguageSwitcher();
+    fixMobileMenuStyles();
+    fixMobileButtonPositioning();
+    fixLanguageSwitcherColor();
+    
+    // Also fix on resize (in case user rotates device)
+    window.addEventListener('resize', function() {
+      fixMobileMenuStyles();
+      fixMobileButtonPositioning();
+      fixLanguageSwitcherColor();
+    });
+    
+    // Re-check color after a delay to catch dynamically loaded backgrounds
+    setTimeout(fixLanguageSwitcherColor, 500);
+    setTimeout(fixLanguageSwitcherColor, 1500);
   }
   
   // Expose to global scope
@@ -954,6 +1184,22 @@
       if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
       else { initMobileSubmenuToggles(); }
       var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+      // Re-initialize when mobile menu becomes visible (MutationObserver)
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes') {
+            var target = mutation.target;
+            if (target.classList && (target.classList.contains('active') || target.classList.contains('open'))) {
+              setTimeout(initMobileSubmenuToggles, 100);
+            }
+          }
+        });
+      });
+      setTimeout(function() {
+        document.querySelectorAll('.mobile-menu, .nav-menu, #navMenu, nav').forEach(function(menu) {
+          observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
+        });
+      }, 500);
     })();
     </script>
 </body></html>
