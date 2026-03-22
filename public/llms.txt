@@ -1,6 +1,4 @@
-# SAMUI — Generative Engine Optimization Map
-
-> A בריאות ואורח חיים business.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -36,17 +34,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About SAMUI
-SAMUI is a business in the בריאות ואורח חיים industry.
-
-## Target Audience
-- ספורטאים מודעים לבריאות
-- יזמים מחפשי שיפור בריאות
-- אנשי מקצוע להפחתת מתח
-
-## Industry
-בריאות ואורח חיים
-
+## About Business
 ---
 
 # Additional Resources
